@@ -1,11 +1,11 @@
+import Matrix from './components/Matrix/index'
+
 function App() {
 
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-    </>
+    <main className='w-screen h-screen flex justify-center items-center'>
+      <Matrix />
+    </main>
   )
 }
 
