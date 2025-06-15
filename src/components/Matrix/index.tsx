@@ -1,11 +1,18 @@
-import { useState } from "react"
 import { Cell } from "./Cell"
 
-const COLS = 30
-const ROWS = 10
+interface props {
+  matrix: number[]
+  setMatrix: React.Dispatch<React.SetStateAction<number[]>>
+  COLS: number
+  ROWS: number
+}
 
-export default function Matrix() {
-  const [matrix, setMatrix] = useState<number[]>(new Array(COLS * ROWS).fill(0))
+export default function Matrix({
+  matrix,
+  setMatrix,
+  COLS,
+  ROWS,
+}: props) {
   // const i = Math.floor(index/ROWS)
   // const j = Math.floor(index % COLS)
 

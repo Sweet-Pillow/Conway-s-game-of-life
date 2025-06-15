@@ -1,19 +1,33 @@
 import Button from "./Button";
 
-export default function Settings() {
+interface props {
+  run: () => void
+  stop: () => void
+  clear: () => void
+  onStep: () => void
+  isRunning: boolean
+}
+
+export default function Settings({
+  run,
+  stop,
+  clear,
+  onStep,
+  isRunning,
+}: props) {
   return(
     <div className='flex flex-row gap-9'>
       <Button 
-        text={'Run/Stop'}
-        onClickFunction={() => {}}
+        text={isRunning? 'Stop': 'Run'}
+        onClick={isRunning? stop: run}
+      />
+      <Button 
+        text={'Clear'}
+        onClick={clear}
       />
       <Button 
         text={'One step'}
-        onClickFunction={() => {}}
-      />
-      <Button 
-        text={'Clear/Restart'}
-        onClickFunction={() => {}}
+        onClick={onStep}
       />
     </div>
   )
