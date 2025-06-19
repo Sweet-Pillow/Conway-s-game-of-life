@@ -41,7 +41,6 @@ export default function App() {
   function steps() {
     
     for(let pos = 0; pos < matrix.length; pos++){
-      // if(matrix[pos] !== 0) continue
 
       const x = Math.floor(pos/COLS)
       const y = pos % COLS
@@ -71,12 +70,6 @@ export default function App() {
       if(yRight < (COLS * ( x + 2 )) && matrix[yRight] === 1) {
         neighbours ++
       }
-
-      // if(neighbours < 2) {
-      //   newMatrix[pos] = 0
-      // } else {
-      //   newMatrix[pos] = 1
-      // }
 
       if(matrix[pos] === 0) {
         if(neighbours === 3) {
