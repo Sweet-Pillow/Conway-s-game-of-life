@@ -3,7 +3,7 @@
 A modern and responsive implementation of **Conway’s Game of Life**, built using **React**, **TypeScript**, and **Tailwind CSS**.
 
 👉 **Try it now:** [Conway's Game of Life
-](https://sweet-pillow.github.io/)
+](https://sweet-pillow.github.io/Conway-s-game-of-life/)
 
 ## 🧠 About the Game
 
